@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lucky ❤️ Urvashi</title>
+
+<style>
+body{
+margin:0;
+font-family: 'Arial', sans-serif;
+background: linear-gradient(180deg,#000,#8b0000);
+color:white;
+overflow-x:hidden;
+}
+
+.section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+position:relative;
+}
+
+h1,h2{
+color:#ff4d6d;
+}
+
+p{
+font-size:18px;
+line-height:1.7;
+max-width:700px;
+}
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:20px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(-110vh);opacity:0;}
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+width:100%;
+max-width:700px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 15px #ff4d6d;
+}
+
+.btns button{
+padding:12px 25px;
+font-size:18px;
+border:none;
+border-radius:25px;
+margin:10px;
+cursor:pointer;
+}
+
+.yes{
+background:#ff4d6d;
+color:white;
+}
+
+.no{
+background:#555;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Intro -->
+<div class="section">
+<h1>My Beautiful Bbu ❤️</h1>
+<p>
+Urvashi Nanwani…  
+Tum meri life ka sabse beautiful gift ho 😘💖  
+Meri har smile ka reason sirf tum ho ❤️
+</p>
+</div>
+
+<!-- Navratri -->
+<div class="section">
+<h2>Navratri 2025 🙏</h2>
+<p>
+Jab Mata Rani ne humein milaya…  
+Mujhe lagta hai unka aashirwad hamesha humare saath hai 💍✨  
+Humara pyaar unki blessing hai ❤️
+</p>
+</div>
+
+<!-- Beauty -->
+<div class="section">
+<h2>My Gorgeous Queen 😍</h2>
+
+<div class="gallery">
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+</div>
+
+<p>
+Tumhara dressing sense 👗✨  
+Tumhari cute smile 😘  
+Tumhari simplicity ❤️  
+Sab kuch perfect hai 💖
+</p>
+</div>
+
+<!-- Strength -->
+<div class="section">
+<h2>My Strong Girl 💪👑</h2>
+<p>
+Tum har situation handle kar sakti ho 💪❤️  
+Tum independent ho… confident ho… strong ho 😍  
+Mujhe tum par hamesha proud hai 💖
+</p>
+</div>
+
+<!-- Love -->
+<div class="section">
+<h2>Our Love 💞</h2>
+<p>
+Tum sirf meri girlfriend nahi…  
+Tum meri best friend ho 🥰  
+Meri partner ho ❤️  
+Meri future ho 💍
+</p>
+</div>
+
+<!-- Dreams -->
+<div class="section">
+<h2>Our Dreams 💍🏠🚗</h2>
+<p>
+Ek grand wedding 💍  
+Ek pyara sa ghar 🏠  
+Ek beautiful car 🚗  
+World tour ✈️  
+Happy family 👶❤️  
+Sab tumhare saath 💖
+</p>
+</div>
+
+<!-- Forever -->
+<div class="section">
+<h2>Forever Together ❤️</h2>
+<p>
+Chahe life me kuch bhi aaye…  
+Main tumhara haath kabhi nahi chhodunga 🤝💞  
+Always & Forever 💖
+</p>
+</div>
+
+<!-- Proposal -->
+<div class="section">
+<h2>My Question 💌</h2>
+<p>
+Bbu…  
+Kya tum meri life partner banogi? 💍🥹  
+Kya tum mere saath hamesha chalogi? ❤️
+</p>
+
+<div class="btns">
+<button class="yes" onclick="yes()">YES 😍</button>
+<button class="no" onclick="no()">NO 😢</button>
+</div>
+</div>
+
+<script>
+// Hearts
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+document.body.appendChild(heart);
+
+setTimeout(()=>{heart.remove();},6000);
+},400);
+
+// Buttons
+function yes(){
+alert("Yayyy!!! 😍💍 I Love You Bbu ❤️ Forever Together 💖");
+}
+
+function no(){
+alert("Main mana lunga 😘❤️ Tum meri ho 💖");
+}
+</script>
+
+</body>
+</html>
